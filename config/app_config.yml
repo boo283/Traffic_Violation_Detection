@@ -1,0 +1,12 @@
+app_name: "Traffic_Violation_Detection"
+version: "1.0.0"
+data_path: "F:/BigData/Traffic_Violation_Detection/data"
+video_input_path: "F:/BigData/videos_input"
+video_output_path: "F:/BigData/videos_output"
+image_output_path: "F:/BigData/Traffic_Violation_Detection/data/images_output"
+logging:
+  config_file: "F:/BigData/Traffic_Violation_Detection/config/logging_config.yml"
+kafka:
+  config_file: "F:/BigData/Traffic_Violation_Detection/config/kafka_config.yml"
+model:
+  config_file: "F:/BigData/Traffic_Violation_Detection/config/model_config.yml"

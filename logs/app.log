@@ -1,0 +1,4 @@
+2024-06-26 23:12:51,122 - my_module - INFO - This is an info message
+2024-06-26 23:12:51,123 - my_module - WARNING - This is a warning message
+2024-06-26 23:12:51,123 - my_module - ERROR - This is an error message
+2024-06-26 23:12:51,124 - my_module - CRITICAL - This is a critical message

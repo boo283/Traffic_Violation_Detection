@@ -1,0 +1,11 @@
+bootstrap_server: "localhost:9092"
+producer:
+  topic: "traffic_violation_video_stream"
+  key_serializer: "org.apache.kafka.common.serialization.StringSerializer" # convert key to byte array
+  value_serializer: "org.apache.kafka.common.serialization.ByteArraySerializer" # convert value to byte array
+consumer:
+  topic: "traffic_violation_video_stream"
+  group_id: "traffic_violation_detection"
+  key_deserializer: "org.apache.kafka.common.serialization.StringDeserializer" # convert byte array to key
+  value_deserializer: "org.apache.kafka.common.serialization.ByteArrayDeserializer" # convert byte array to value
+  auto_offset_reset: "latest"
