@@ -1,0 +1,9 @@
+- Run zookeeper:
+    bin\windows\zookeeper-server-start.bat config\zookeeper.properties
+- Run kafka:
+    bin\windows\kafka-server-start.bat config\server.properties
+- Create a topic:
+    bin\windows\kafka-topics.bat --create --topic traffic_violation_video_stream `
+    --bootstrap-server localhost:9092
+- List topics:
+    bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
