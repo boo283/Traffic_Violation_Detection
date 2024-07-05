@@ -23,7 +23,8 @@ spark = SparkSession.builder \
     .getOrCreate()
 
 #model = torch.hub.load('F:\\BigData\\Traffic_Violation_Detection\\data\\models\\best.pt', model='yolov10')
-model = YOLOv10('F:\\BigData\\Traffic_Violation_Detection\\data\\models\\best.pt')
+model_path = 'F:\\BigData\\Traffic_Violation_Detection\\data\\models\\best.pt'
+model = YOLOv10(model_path)
 
 # Define annotators
 bounding_box_annotator = sv.BoundingBoxAnnotator()
