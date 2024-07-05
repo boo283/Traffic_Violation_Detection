@@ -42,15 +42,15 @@ if __name__ == '__main__':
     #     frame = cv2.resize(frame, (960, 540))
     #     producer.send_frame(frame, "frame", 0.5)
 
-    frame_skip_interval = 1  # Chụp một khung hình mỗi 0.5 giây
-    sleep_interval = 0  # Điều chỉnh khoảng thời gian chờ để cân bằng tốc độ
+    frame_skip_interval = 1  
+    sleep_interval = 0  
 
     while True:
         success, frame = video.read()
         if not success:
             break
 
-        # Chụp một khung hình mỗi 0.5 giây
+        
         current_time = time.time()
         frame = cv2.resize(frame, (640, 640))
         producer.send_frame(frame, "frame")

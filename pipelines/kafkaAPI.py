@@ -5,9 +5,9 @@ admin_client = KafkaAdminClient(
     client_id='test'
 )
 
-# Delete topic
-admin_client.delete_topics(['result'])
-admin_client.delete_topics(['traffic_violation_video_stream'])
+# # Delete topic
+# admin_client.delete_topics(['result'])
+# admin_client.delete_topics(['traffic_violation_video_stream'])
 
 # Create topic
 topic_list = [NewTopic(name='result', num_partitions=1, replication_factor=1)]

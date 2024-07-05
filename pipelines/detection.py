@@ -75,7 +75,7 @@ spark_df = spark.readStream.format("kafka")\
 #apply udf on spark_df
 spark_df = spark_df.withColumn("value", process_udf("value"))
 
-# Viết stream ra Kafka
+# stream ra Kafka
 query = spark_df.writeStream \
     .format("kafka") \
     .option("kafka.bootstrap.servers", "localhost:9092") \
