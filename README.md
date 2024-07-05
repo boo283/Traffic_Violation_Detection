@@ -1,6 +1,6 @@
 # Traffic Violation Detection with Spark and Kafka
 
-![Project Banner](path_to_your_banner_image)
+![Project Banner]
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -28,7 +28,7 @@ The architecture of the project consists of the following components:
 2. **Spark Consumer**: Reads frames from Kafka, processes them with a UDF for bounding box prediction, and streams the processed frames to another Kafka topic.
 3. **Processed Frame Consumer**: Reads processed frames from Kafka, displays them using OpenCV and stores in MongoDB.
 
-![Architecture Diagram](path_to_your_architecture_diagram)
+![Architecture Diagram](tvd_sa.png)
 
 ## Installation
 ### Prerequisites
