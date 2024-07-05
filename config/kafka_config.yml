@@ -9,3 +9,13 @@ consumer:
   key_deserializer: "org.apache.kafka.common.serialization.StringDeserializer" # convert byte array to key
   value_deserializer: "org.apache.kafka.common.serialization.ByteArrayDeserializer" # convert byte array to value
   auto_offset_reset: "latest"
+producer1:
+  topic: "result"
+  key_serializer: "org.apache.kafka.common.serialization.StringSerializer" # convert key to byte array
+  value_serializer: "org.apache.kafka.common.serialization.ByteArraySerializer" # convert value to byte array
+consumer1:
+  topic: "result"
+  group_id: "traffic_violation_detection"
+  key_deserializer: "org.apache.kafka.common.serialization.StringDeserializer" # convert byte array to key
+  value_deserializer: "org.apache.kafka.common.serialization.ByteArrayDeserializer" # convert byte array to value
+  auto_offset_reset: "latest"

@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 11
+names: ['bus', 'car', 'green', 'helmet', 'no_helmet', 'pedestrian', 'red', 'rider', 'stopline', 'truck', 'yellow']
+
+roboflow:
+  workspace: bigdata-g7ipo
+  project: traffic-violation-detection-fljwq
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/bigdata-g7ipo/traffic-violation-detection-fljwq/dataset/1
