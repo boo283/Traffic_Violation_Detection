@@ -54,7 +54,7 @@ if __name__ == '__main__':
         current_time = time.time()
         frame = cv2.resize(frame, (640, 640))
         producer.send_frame(frame, "frame")
-        time.sleep(0.01)
+        time.sleep(0.001)
 
     producer.close()
     video.release()
