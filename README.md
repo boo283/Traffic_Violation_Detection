@@ -28,7 +28,7 @@ The architecture of the project consists of the following components:
 2. **Spark Consumer**: Reads frames from Kafka, processes them with a UDF for bounding box prediction, and streams the processed frames to another Kafka topic.
 3. **Processed Frame Consumer**: Reads processed frames from Kafka, displays them using OpenCV and stores in MongoDB.
 
-![Architecture Diagram](tvd_sa.png)
+![Architecture Diagram](data/tvd_sa.png)
 
 ## Installation
 ### Prerequisites
